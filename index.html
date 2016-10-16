@@ -1,441 +1,238 @@
 
 <style>
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1073786111 1 0 415 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin-top:2.0pt;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	line-height:120%;
-	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	mso-font-kerning:10.0pt;
-	mso-fareast-language:JA;}
-h1
-	{mso-style-qformat:yes;
-	mso-style-next:Normal;
-	margin-top:2.0pt;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	text-align:right;
-	line-height:120%;
-	mso-pagination:widow-orphan;
-	mso-outline-level:1;
-	font-size:10.5pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#5C2D91;
-	mso-themecolor:accent1;
-	text-transform:uppercase;
-	mso-font-kerning:10.0pt;
-	mso-fareast-language:JA;
-	font-weight:normal;}
-h2
-	{mso-style-qformat:yes;
-	mso-style-next:Normal;
-	margin-top:2.0pt;
-	margin-right:0in;
-	margin-bottom:2.0pt;
-	margin-left:0in;
-	line-height:120%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:2;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#404040;
-	mso-themecolor:text1;
-	mso-themetint:191;
-	text-transform:uppercase;
-	mso-font-kerning:10.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:JA;}
-p.ResumeText, li.ResumeText, div.ResumeText
-	{mso-style-name:"Resume Text";
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	margin-top:2.0pt;
-	margin-right:1.0in;
-	margin-bottom:2.0pt;
-	margin-left:0in;
-	line-height:120%;
-	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	mso-font-kerning:10.0pt;
-	mso-fareast-language:JA;}
-p.ContactInfo, li.ContactInfo, div.ContactInfo
-	{mso-style-name:"Contact Info";
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	margin-top:2.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	margin-bottom:.0001pt;
-	text-align:right;
-	mso-pagination:widow-orphan;
-	font-size:9.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	mso-font-kerning:10.0pt;
-	mso-fareast-language:JA;}
-p.Name, li.Name, div.Name
-	{mso-style-name:Name;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-next:Normal;
-	margin-top:12.0pt;
-	margin-right:.1in;
-	margin-bottom:8.0pt;
-	margin-left:.1in;
-	line-height:120%;
-	mso-pagination:widow-orphan;
-	background:#5C2D91;
-	mso-background-themecolor:accent1;
-	border:none;
-	mso-border-alt:solid #5C2D91 .5pt;
-	mso-border-themecolor:accent1;
-	padding:0in;
-	mso-padding-alt:4.0pt 6.0pt 4.0pt 6.0pt;
-	font-size:16.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:white;
-	mso-themecolor:background1;
-	text-transform:uppercase;
-	mso-font-kerning:10.0pt;
-	mso-fareast-language:JA;}
+	body{
+    font-family: 'Roboto';
+    background-color: #f1f1f1;
+}
+
+aside{
+    float: left;
+    text-align: right;
+    margin-top: 20px;
+}
+
+article{
+    float: left;
+}
+
+#name{
+    font-weight: lighter;
+}
+
+#profile-img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+}
+
+.title{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.small-header{
+    padding: 5px;
+    background-color: #27ae60;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: lighter;
+}
+
+.sub-header{
+    padding: 5px;
+    background-color: #2ecc71;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: lighter;
+}
+
+.section-area {
+    margin-left: 50px;
+    border-left: 10px solid #27ae60;
+    padding-left: 20px;
+}
+
+.section-area h1 {
+    margin-bottom: 0px;
+}
+/*///////////////////////////////////////////////////////
+    // Progress Bars \\ 
+///////////////////////////////////////////////////////*/
+
+.progressBar {
+  margin-bottom: 26px;
+  margin-bottom: 1.33em;
+}
+
+.pr-header{
+    display: inline-block;
+}
+
+.progressBarContainer {
+    display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  height: 26px;
+  height: 1.66em;
+  background: #F89406;
+  background: rgba(8,102,220,.2);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+
+.progressBarValue {
+  height: 1.66em;
+  float: left;
+  background: #0866dc;
+  background: rgba(8,102,220,.75);
+}
+
+.progressBarValue > p {
+    text-align: left;
+    padding-left: 4px;
+    padding-top: 2px;
+    color: white;
+}
+
+
+.value-00 { width: 0; }
+
+.value-10 { width: 10%; }
+
+.value-20 { width: 20%; }
+
+.value-30 { width: 30%; }
+
+.value-40 { width: 40%; }
+
+.value-50 { width: 50%; }
+
+.value-60 { width: 60%; }
+
+.value-70 { width: 70%; }
+
+.value-80 { width: 80%; }
+
+.value-90 { width: 90%; }
+
+.value-100 { width: 100%; }
 </style>
 
-<p class=ContactInfo>
-	https://www.github.com/roije
-</p>
-
-<p class=ContactInfo>
- 	<a href="">
- 		roijee@hotmail.com
- 	</a>
-</p>
-
-<p class=ContactInfo>
-	Dalslandsgade 8, G, 7, 803
-
-<p class=ContactInfo>
-	Copenhagen S, Denmark
-</p>
-
-<div style='mso-element:para-border-div;border:solid #5C2D91 1.0pt;mso-border-themecolor:accent1;mso-border-alt:solid #5C2D91 .5pt;
- mso-border-themecolor:accent1;padding:4.0pt 6.0pt 4.0pt 6.0pt;background:#5C2D91;mso-background-themecolor:accent1;margin-left:.1in;margin-right:.1in'>
-	<p class=Name>
-		R&#243;i J&#243;insson Ellingsgaard
-	</p>
-</div>
-
-<table class=ResumeTable border=0 cellspacing=0 cellpadding=0 title="Resume text" summary=Resume width="100%" style='width:100.0%;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:.1in 0in .1in 0in'>
- 
- 
-<tr style='mso-yfti-irow:4'>
-  <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  <h1>
-  	Education
-  </h1>
-  </td>
-  <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  </td>
-  <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'><span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-  </span>
-  <h2>
-     	Secondary School, 2005-2009
-     </h2>
-     <p class=MsoNormal>
-     	Bolyai Janos Gimnazium es Kereskedelmi Szakkozepiskola (Ocsa, Hungary)
-     </p>
-     <p class=MsoNormal>
-	English high level graduate, intermediate language exam
-	</p>
-	
-     <p class=MsoNormal>
-     	IT high level graduate
-     </p>
-     <p class=MsoNormal>
-     	Mathematics high level
-     </p>
-     <h2>
-     	University of Debrecen, Hungary, 2009-2015
-     </h2>
-     <p class=MsoNormal>
-     	Faculty of Informatics, System Engineering
-     </p>
-     <p class=MsoNormal>
-	Developing skills: C, C++, Visual Basic, Python, LabView, .NET, PHP, HTML, JAVA
-     </p>
-     <p class=MsoNormal>
-     	Measurement and process management specialization
-	
-     	</p>
-	
-     <h2>
-     	KEA - Copenhagen School of Design and Technology (Denmark)
-     </h2>
-     <p class=MsoNormal>
-     	Computer Science
-     </p>
-     <p class=MsoNormal>
-Developing skills: C#, JAVA, JavaScript, Android Game Development
-     </p>
-     <p class=MsoNormal>
-     	Software Design - project management
-     </p>
-	  
-	  <h2>
-     	KEA - Copenhagen School of Design and Technology (Denmark)
-     </h2>
-     <p class=MsoNormal>
-     	Software Development
-     </p>
-     <p class=MsoNormal>
-Developing skills: C#, JAVA, PHP
-     </p>
-     <p class=MsoNormal>
-     	Software Testing
-     </p>
-    </td>
-	
- 
- </tr>
-
-
-<tr style='mso-yfti-irow:3'>
-  <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  	<h1>
-  		Work History
-  	</h1>
-  </td>
-  <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  	<p class=MsoNormal>
-  	</p>
-  </td>
-  <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;
-  mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  	<span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-  	</span>
-     <h2>
-     	Webshop Operating Assistant (Budapest, Hungary)
-     </h2>
-    <p class=ResumeText>
-    	01.06.12.-28.02.14.
-    </p>
-    <p class=ResumeText>
-    	Professional experiences: operating webshop, managing productlist
-    </p>
-    <span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-  	</span>
-     <h2>
-     	Microsoft Student Partner (Budapest, Hungary)
-     </h2>
-    <p class=ResumeText>
-    	06.05.13. - Present
-    </p>
-    <p class=ResumeText>
-    	Windows Insider, Microsoft Azure development, relations with students and instructors, attend to professional events
-    </p>
- 	<span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-  	</span>
-     <h2>
-     	Microsoft Student Partner (Copenhagen, Denmark)
-     </h2>
-    <p class=ResumeText>
-    	01.02.15. - Present
-    </p>
-    <p class=ResumeText>
-    	Microsoft Azure development, BizSpark, Hour of Code, relations with students and instructors, attend to professional events
-    </p>
-<h2>
-     	LicenseWatch A/S
-     </h2>
-    <p class=ResumeText>
-    	01.09.15. - 01.09.16.
-    </p>
-    <p class=ResumeText>
-    	Azure AD, Microsoft server software installation and management
-    </p>
-
-
-<tr style='mso-yfti-irow:1'>
-  <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  	<h1>
-  		Professional Achievements
-  	</h1>
-  </td>
-  <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  </td>
-  <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-	<span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-	</span>
-	<h2>
-		<span style='color:#404040;mso-themecolor:text1;mso-themetint:191'>
-			Microsoft Certified Professional
-		</span>
-	</h2>
-    <p class=ResumeText>
-    	PRO: Designing and Developing Microsoft Azure Applications 
-    </p>
-    <p class=ResumeText>
-    	EXAM ID: 70-583 
-    </p>
-  <span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-  </span>
-  <h2>
-  	<span class=MsoPlaceholderText>
-  		<span style='color:#404040;mso-themecolor:text1;mso-themetint:191'>
-  			Language Exam
-  		</span>
-  	</span>
-  </h2>
-    <p class=ResumeText>
-    	State Accredited Language Examination - Intermediate (891629/918178)
-    </p>
-      <p class=ResumeText>
-	English
-	</p>
-  <span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-  </span>
-  <h2>
-     <span class=MsoPlaceholderText>
-     	<span style='color:#404040;mso-themecolor:text1;mso-themetint:191'>
-     		Driving licence
-     	</span>
-     </span>
-   </h2>
-    <p class=ResumeText>
-    	B
-    </p>
-  </td>
- </tr>
-
-<tr style='mso-yfti-irow:2'>
-  <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  	<h1>
-  		Skills
-  	</h1>
-  </td>
-  <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  </td>
-  <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;
-  mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  	<span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
-  	<p class=ResumeText>
-  		Azure Web Development
-  	</p>
-    <p class=ResumeText>
-    	C#
-    </p>
-    <p class=ResumeText>
-    	Java
-    </p>
-    <p class=ResumeText>
-    	HTML and CSS
-    </p>
-    <p class=ResumeText>
-    	Up to date knowledge about most of the Microsoft software
-    </p>
-  </td>
-  
-<tr style='mso-yfti-irow:1'>
-  
- <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-  <h1>
-  	Objective
-  </h1>
- </td>
-
-<td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-</td>
-
-<td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
-	<p class=MsoNormal>
-		I want to be an expert in Microsoft Azure and C#.
-	</p>
-	<p class=MsoNormal>
-		Now I study at KEA, where I mostly learn about JAVA and Networking. During my studies I hold workshops and events for students
-		about Azure, Hour of Code, etc..
-	</p>
-	<p class=MsoNormal>
-	</p>
-</td>
-
- </tr>
-</table>
-
-</div>
-
-</body>
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="container">
+            <header class="col-md-12">
+                <img id="profile-img" src="mepixl.jpg">
+                <div class="title">
+                    <h3 class="small-header"><span>NAVN</span></h3>
+                    <h1 id="name">Rói Jóinsson Ellingsgaard</h1>
+                </div>  
+            </header>
+            <aside class="col-md-2 col-xs-1">
+                <div class="aside-content">
+                    <h3 class="small-header">KONTAKT</h3>
+                    <p>Dalslandsgade 8 G,7,-803</p>
+                    <p>2300 København S</p>
+                    <p>roijee@hotmail.com</p>
+                    <p>+45 71 60 52 88</p>
+                </div>
+                <div>
+                    <h3 class="small-header">SPROG</h3>
+                    <p>Dansk</p>
+                    <p>Færøsk</p>
+                    <p>Engelsk</p>
+                </div>
+                <div>
+                    <h3 class="small-header">SKILLS</h3>
+                     
+                </div>
+                <div>
+                    <h3 class="small-header">HOBBIES</h3>
+                    <p></p>
+                </div>
+            </aside>
+            <article class="col-md-6">
+                <section>
+                    <div class="section-area">
+                        <h1>min profil</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo massa, dapibus dapibus urna eu, finibus commodo sem. Maecenas non facilisis felis. Vivamus gravida finibus massa eu vehicula. Donec id dolor massa. Curabitur non metus mollis, cursus sapien eu, tempor dui. Aliquam ornare ante est, eget condimentum risus laoreet ut. Cras nec auctor nulla, cursus pulvinar magna.</p>
+                    </div>
+                    <div class="section-area">
+                        <h1>uddannelse</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo massa, dapibus dapibus urna eu, finibus commodo sem. Maecenas non facilisis felis. Vivamus gravida finibus massa eu vehicula. Donec id dolor massa. Curabitur non metus mollis, cursus sapien eu, tempor dui. Aliquam ornare ante est, eget condimentum risus laoreet ut. Cras nec auctor nulla, cursus pulvinar magna.</p>
+                    </div>
+                    <div class="section-area">
+                        <h1>arbejdserfaring</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris leo massa, dapibus dapibus urna eu, finibus commodo sem. Maecenas non facilisis felis. Vivamus gravida finibus massa eu vehicula. Donec id dolor massa. Curabitur non metus mollis, cursus sapien eu, tempor dui. Aliquam ornare ante est, eget condimentum risus laoreet ut. Cras nec auctor nulla, cursus pulvinar magna.</p>
+                    </div>
+                    <div class="section-area">
+                        <h1>måske skills her</h1>
+                        <h4 class="sub-header">Programmerings-sprog:</h4>
+                        <row>
+                            <div class="col-md-4">
+                                <div class="progressBar">
+                                    <div class="progressBarContainer">
+                                        <div class="progressBarValue value-100"><p>Java</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="progressBar">
+                                    <div class="progressBarContainer">
+                                        <div class="progressBarValue value-70"><p>Javascript</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="progressBar">
+                                    <div class="progressBarContainer">
+                                        <div class="progressBarValue value-70"><p>NodeJS</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="progressBar">
+                                    <div class="progressBarContainer">
+                                        <div class="progressBarValue value-70"><p>Typescript</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </row>
+                         <row>
+                            <div class="col-md-4">
+                                <div class="progressBar">
+                                    <div class="progressBarContainer">
+                                        <div class="progressBarValue value-70"><p>Angular 2</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="progressBar">
+                                    <div class="progressBarContainer">
+                                        <div class="progressBarValue value-90"><p>C#</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                <div class="progressBar">
+                                    <div class="progressBarContainer">
+                                        <div class="progressBarValue value-90"><p>ASP .NET MVC</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </row>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </body>
 </html>
